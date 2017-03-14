@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./partials/meta'); %>
+    <title>cute!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <h1>cute!</h1>
+
+    <ul id="items">
+      <li class="item" v-for="image in images">
+        <img :src="image" alt="">
+      </li>
+    </ul>
+
+    <div class="loading">
+      <div class="load">
+        <img src="/images/load.gif" alt="loading image">
+      </div>
+    </div>
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/vue.min.js"></script>
+    <script src="/javascripts/masonry.pkgd.min.js"></script>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
